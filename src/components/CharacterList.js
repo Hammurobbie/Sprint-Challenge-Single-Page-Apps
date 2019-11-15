@@ -38,6 +38,12 @@ export default function CharacterList() {
 
       <SearchForm chars={chars} />
 
+      {/* <section className="character-list">
+        {chars.map(char => (
+          <CharacterCard key={char.id} char={char} />
+        ))}
+      </section> */}
+
       <section className="character-list">
         {chars.map(char => (
           <CharacterCard key={char.id} char={char} />

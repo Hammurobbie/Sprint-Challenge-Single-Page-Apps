@@ -9,6 +9,9 @@ const Form = styled.form`
 
 const Input = styled.input`
   text-align: center;
+  background-color: rgba(78, 184, 174, 0.25);
+  font-size: 100%;
+  color: dodgerblue;
 `;
 
 export default function SearchForm({ chars }) {
@@ -23,7 +26,7 @@ export default function SearchForm({ chars }) {
       character.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
-  }, [searchTerm]);
+  }, [searchTerm, chars]);
 
   const changeHandler = event => {
     event.preventDefault();

@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #8ec7dc;
 }
 
 main {
@@ -34,6 +35,36 @@ main {
   margin: 0 auto;
 } */
 
+@font-face {
+  font-family: "get_schwifty";
+  src: local("get_schwifty"), url(./fonts/get_schwifty.ttf) format("truetype");
+}
+
 header h1 {
   text-align: center;
+  font-family: "get_schwifty";
+  color: #4eb8ae;
+}
+
+h2 {
+  text-align: center;
+  color: #ade3e0;
+}
+
+img {
+  border-radius: 200px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 130%;
+}
+
+a:hover {
+  color: #4eb8ae;
+  transition: 0.75s;
+}
+
+::placeholder {
+  color: dodgerblue;
 }
